@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="/">My School</a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/students">Students</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="student-list">
+        <h2>Students List</h2>
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Current Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be populated using JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="add-student-form">
+        <!-- Form for adding a new student -->
+        <form id="studentForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="date" id="dob" required>
+            <input type="number" id="grade" min="1" max="12" placeholder="Grade (1-12)" required>
+            <button type="submit">Add Student</button>
+        </form>
+    </section>
+
+    <footer>
+        <!-- School information goes here -->
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
